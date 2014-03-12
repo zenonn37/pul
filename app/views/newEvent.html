@@ -1,0 +1,83 @@
+<div ng-controller="EditEventController">
+
+<form name="newEventForm">
+
+    <div class="form-group">
+        <label for="Event" class="col-sm-2 control-label">Event</label>
+        <div class="col-sm-10">
+            <input type="text" ng-model="event.name" class="form-control" id="Event" placeholder="Enter Event">
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label for="EventDate" class="col-sm-2 control-label">Event Date</label>
+        <div class="col-sm-10">
+            <input type="text" required  ng-model="event.date" class="form-control" id="EventDate" placeholder="Enter Event">
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label for="EventTime" class="col-sm-2 control-label">Event Time</label>
+        <div class="col-sm-10">
+            <input type="text" ng-model="event.time" class="form-control" id="EventTime" placeholder="Enter Event">
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label for="EventLocation" class="col-sm-2 control-label">Event Location</label>
+        <div class="col-sm-10">
+            <input type="text" ng-model="event.location.address" class="form-control" id="EventLocation" placeholder="Enter Event">
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label for="EventCity" class="col-sm-2 control-label">Event Location</label>
+        <div class="col-sm-10">
+            <input type="text" ng-model="event.location.city" class="form-control" id="EventCity" placeholder="Enter Event">
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="EventProvince" class="col-sm-2 control-label">Event Location</label>
+        <div class="col-sm-10">
+            <input type="text" ng-model="event.location.province" class="form-control" id="EventProvince" placeholder="Enter Event">
+        </div>
+
+    </div>
+
+
+    <br/>
+
+
+
+
+    <div class="form-group">
+        <label for="EventImageUrl" class="col-sm-2 control-label">Event Location</label>
+        <div class="col-sm-10">
+            <input type="url" ng-model="event.imageUrl" required class="form-control" id="EventImageUrl" placeholder="Enter Event">
+        </div>
+
+    </div>
+
+    <div><img ng-src="{{ event.imageUrl }}" src=""/></div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit"  class="btn btn-default" ng-click="saveEvent(event,newEventForm)">Create Event</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-default" ng-click="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+
+
+
+</form>
+
+
+</div>

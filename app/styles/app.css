@@ -1,0 +1,20 @@
+/*css file*/
+
+[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak], .ng-cloak, .x-ng-cloak{
+    display: none;
+}
+
+.votingWidget{
+    height: 64px;
+    padding: 7px;
+}
+
+.votingButton{
+   padding-left: 6px;
+    cursor: pointer;
+}
+
+.well-title{
+
+    margin-top: 0px;
+}
